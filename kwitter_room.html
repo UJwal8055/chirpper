@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Kwitter Rooms</title>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	
+
+	<script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries </script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<!--Add onclick "logout()" for the button tag:-->
+		<button id="logout" onclick = "logout()" class="glyphicon glyphicon-log-out btn btn-danger">Exit</button>
+
+		<center>
+			<h1 class="header">
+				Chirpperrz
+				<sup>
+					<img src="m2.png">
+				</sup>
+			</h1>
+			<!--2. Add id="user_name" to the h3 tag:-->
+			<h3  id="user_name" class="color_white"></h3>
+
+			<div class="form-group input_div_room_page">
+				<label>#Add room:</label>
+
+				<!-- Add a text input box so the user can enter the room name:-->
+				<input id="room_name" placeholder = "Add room name" type="text">
+
+			</div>
+
+			<!--Add onclick="addRoom()" to the button tag so the function can be called from Js :-->
+			<button onclick="addRoom()" class="btn btn-success">#Add Room</button>
+			<h3 class="color_white">#TrendingRooms</h3>
+
+		<!--Add id=”output” to the div tag so it can be identified on Javascript-->	
+			<div id="output" style ="text-align : left; margin-bottom: 70px;"></div>
+
+		</center>
+	</div>
+	<script src="kwitter_room.js"></script>
+</body>
+
+</html>
